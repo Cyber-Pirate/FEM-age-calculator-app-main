@@ -16,9 +16,11 @@ function age() {
     validInputs = false;
     document.querySelector("label[for='date']").style.color = "hsl(0, 100%, 67%)";
     document.querySelector(".d-wrong").removeAttribute("hidden");
+    document.getElementById("date").style.border = " .5px solid hsl(0, 100%, 67%)"
     spb.style.paddingBottom = '0rem';
   } else {
     document.querySelector("label[for='date']").style.color = "";
+    document.getElementById("date").style.border = "";
     document.querySelector(".d-wrong").setAttribute("hidden", true);
   }
 
@@ -28,8 +30,10 @@ function age() {
     document.querySelector("label[for='month']").style.color = "hsl(0, 100%, 67%)";
     document.querySelector(".m-wrong").removeAttribute("hidden");
     spb.style.paddingBottom = '0rem';
+    document.getElementById("month").style.border = " .5px solid hsl(0, 100%, 67%)"
   } else {
     document.querySelector("label[for='month']").style.color = "";
+    document.getElementById("month").style.border = "";
     document.querySelector(".m-wrong").setAttribute("hidden", true);
   }
 
@@ -39,8 +43,10 @@ function age() {
     document.querySelector("label[for='year']").style.color = "hsl(0, 100%, 67%)";
     document.querySelector(".y-wrong").removeAttribute("hidden");
     spb.style.paddingBottom = '0rem';
+    document.getElementById("year").style.border = " .5px solid hsl(0, 100%, 67%)"
   } else {
     document.querySelector("label[for='year']").style.color = "";
+    document.getElementById("year").style.border = "";
     document.querySelector(".y-wrong").setAttribute("hidden", true);
   }
 
@@ -48,27 +54,33 @@ function age() {
 if (!day) {
   validInputs = false;
   document.querySelector("label[for='date']").style.color = "hsl(0, 100%, 67%)";
+  document.getElementById("date").style.border = " .5px solid hsl(0, 100%, 67%)";
   document.querySelector(".d-empty").removeAttribute("hidden");
   spb.style.paddingBottom = '0rem';
 } else {
   document.querySelector(".d-empty").setAttribute("hidden", true);
+  document.getElementById("date").style.border = "";
 }
 if (!month) {
   validInputs = false;
   document.querySelector("label[for='month']").style.color = "hsl(0, 100%, 67%)";
+  document.getElementById("month").style.border = " .5px solid hsl(0, 100%, 67%)"
   document.querySelector(".m-empty").removeAttribute("hidden");
   spb.style.paddingBottom = '0rem';
 } else {
   document.querySelector(".m-empty").setAttribute("hidden", true);
+  document.getElementById("month").style.border = ""
 }
 
 if (!year) {
   validInputs = false;
   document.querySelector("label[for='year']").style.color = "hsl(0, 100%, 67%)";
+  document.getElementById("year").style.border = " .5px solid hsl(0, 100%, 67%)"
   document.querySelector(".y-empty").removeAttribute("hidden");
   spb.style.paddingBottom = '0rem';
 } else {
   document.querySelector(".y-empty").setAttribute("hidden", true);
+  document.getElementById("year").style.border = "";
 }
 
 if (validInputs) {

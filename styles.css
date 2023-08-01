@@ -11,7 +11,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 80vh;
     background-color: var(--off-white);
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@ main{
     font-family: 'Poppins', sans-serif;
     width: 37%;
     height: fit-content;
+    margin-top: 9rem;
     padding: 2rem 1rem 2rem 3rem;
     border-radius: 25px 25px 130px 25px;
     background-color: var(--white);
@@ -135,16 +136,46 @@ span{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media (max-width: 767px)  {
-    .main{
-        width: fit-content;
+
+    body{
+        gap: 4rem;
+    }
+
+    main{
+        width: 80vw;
         height: fit-content;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+
+    .form_area{
+        margin-bottom: 1.5rem;
+    }
+
+    .output{
+        margin-top: 3.5rem;
     }
 
     .btn-submit{
         --size: 50px;
-        left:50%;
+        left:40%;
+        top: 100%;
         height: var(--size);
         width: var(--size);
+    }
+
+
+    .inp{
+        width: 25%;
+    }
+
+    .input_area{
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .btn-submit>svg{
+        height: 27px;
+        width: 28px;
     }
 
     h1{
