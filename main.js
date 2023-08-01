@@ -80,7 +80,7 @@ if (!year) {
   spb.style.paddingBottom = '0rem';
 } else {
   document.querySelector(".y-empty").setAttribute("hidden", true);
-  document.getElementById("year").style.border = " .5px solid hsl(0, 100%, 67%)"
+  document.getElementById("year").style.border = "";
 }
 
 if (validInputs) {
