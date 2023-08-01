@@ -36,9 +36,9 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Replit](https://fem-age-calculator-app-main.cyberpirate.repl.co)
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Cyber-Pirate)
-- Twitter - [@yourusername](https://www.twitter.com/0xCyberPirate)
+- Frontend Mentor - [@Cyber-Pirate](https://www.frontendmentor.io/profile/Cyber-Pirate)
+- Twitter - [@0xCyberPirate](https://www.twitter.com/0xCyberPirate)
